@@ -71,7 +71,9 @@ NOM NOM... Você não é admin!
 
 Isso fortaleceu a hipótese de que esse cookie estava sendo utilizado para determinar o privilégio do usuário.
 
-**[PRINT 1 — Aplicação negando acesso e cookie `admin=nao`]**
+![Aplicação negando acesso e cookie admin igual a nao](images/print-1-admin-nao.png)
+
+*Aplicação negando o acesso com o cookie `admin=nao`.*
 
 ### 2. Manipulando o valor do cookie
 
@@ -103,7 +105,9 @@ admin=sim
 
 Nesse momento, a página ainda apresentava a mensagem de acesso negado, pois a alteração havia sido realizada apenas no cookie armazenado no navegador e uma nova requisição ainda precisava ser enviada à aplicação.
 
-**[PRINT 2 — Cookie alterado para `admin=sim`]**
+![Cookie alterado para admin igual a sim](images/print-2-admin-sim.png)
+
+*Cookie alterado para `admin=sim`, antes do recarregamento da página.*
 
 ### 3. Recarregando a aplicação
 
@@ -125,7 +129,9 @@ NOM NOM NOM! DELÍCIA! Aqui está sua flag: FLAG{C00K1E_M0NST3R_MUNCH}
 
 Dessa forma, conseguimos contornar o controle de acesso da aplicação e obter a flag.
 
-**[PRINT 3 — Aplicação exibindo a flag com `admin=sim`]**
+![Aplicação exibindo a flag com o cookie admin igual a sim](images/print-3-flag.png)
+
+*Aplicação exibindo a flag após receber o cookie `admin=sim`.*
 
 ## Flag
 
